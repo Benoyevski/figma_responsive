@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: 116px;
-    background-color: FAFAFA;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,6 +9,7 @@
 
 .main {
     display: flex;
+    max-width: 100%;
 }
 
 .main .a1 {
@@ -25,16 +26,21 @@
 
 .main_2 {
     display: flex;
+    max-width: 100%;
 }
 
 .main_2 .a3 {
     width: 50%;
+    max-width: 100%;
 }
 
-
+.main_2 .a4 {
+    width: 50%;
+    background-color: #F1F1F2;
+}
 
 .text {
-    width: 433px;
+    width: 80%;
     height: 411px;
     display: flex;
     justify-content: flex-start;
@@ -58,7 +64,8 @@ h1 div {
 }
 
 button {
-    width: 200px;
+    width: 40%;
+    max-width: 200px;
     height: 60px;
     background-color: #F7941E;
     border-radius: 5px;
@@ -73,14 +80,18 @@ button {
 }
 
 .header .logo {
-    width: 45px;
+    width: 5%;
     height: 40px;
     margin: 38px;
 }
 
+.logo img {
+    max-width: 100%;
+}
+
 
 .menu {
-    width: 331px;
+    width: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,7 +100,9 @@ button {
 }
 
 .giftButton {
-    width: 140px;
+    width: 15%;
+    max-width: 200px;
+    box-sizing: border-box;
     height: 38px;
     border: 1px solid #F7941E;
     display: flex;
@@ -101,14 +114,9 @@ button {
     justify-content: center;
 }
 
-.main_2 .a4 {
-    width: 50%;
-    background-color: #F1F1F2;
-}
+
 
 .info {
-    width: 440px;
-    height: 330px;
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -121,7 +129,8 @@ button {
 }
 
 .info .more {
-    width: 200px;
+    width: 40%;
+    max-width: 200px;
     height: 60px;
     border: 1px solid #F7941E;
     color: #F7941E;
@@ -150,14 +159,21 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+}
+
+.columns img {
+    max-width: 100%;
 }
 
 .c1, .c2, .c3, .c4 {
-    width: 270px;
+    width: 20%;
     height: 436px;
     display: flex;
     flex-direction: column;
 }
+
+
 
 .c1:hover, .c2:hover, .c3:hover, .c4:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -184,6 +200,7 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 200px;
 }
 
 .textInOrange {
@@ -201,7 +218,8 @@ button {
 }
 
 .findInOrange {
-    width: 200px;
+    width: 40%;
+    max-width: 200px;
     height: 48px;
     border-radius: 5px;
     background-color: black;
@@ -209,7 +227,8 @@ button {
 }
 
 .howWorksOrange {
-    width: 200px;
+    width: 40%;
+    max-width: 200px;
     height: 48px;
     border-radius: 5px;
     color: black;
@@ -225,6 +244,10 @@ button {
     align-items: center;
     font-size: 32px;
 
+}
+
+.imageBlog img {
+    max-width: 100%;
 }
 
 .blogsFoot {
@@ -249,19 +272,19 @@ button {
 }
 
 .left {
-    width: 570px;
+    width: 40%;
     height: 290px;
-    margin-left: 100px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 5%;
     padding-top: 20px;
     padding-left: 20px;
 }
 
 .right {
-    width: 570px;
+    width: 40%;
     height: 290px;
-    margin-left: 50px;
-    margin-right: 100px;
+    margin-left: 5%;
+    margin-right: 10%;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -274,19 +297,27 @@ button {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.footer {
+    width: 100%;
+}
+
 .footerLogo {
     width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 100px;
     align-items: center;
+
+}
+
+.footerLogo img {
+    max-width: 100%;
 }
 
 .first {
     font-weight: bold;
-    width: 160px;
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -295,7 +326,7 @@ button {
 
 .second {
     font-weight: bold;
-    width: 160px;
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -325,4 +356,6 @@ button {
     align-items: center;
 }
 
-
+img {
+    max-width: 100%;
+}
